@@ -1,0 +1,30 @@
+<h1>Products</h1>
+
+<div 
+class="procucts-block"
+*ngFor="let product of products"
+>
+    <a 
+    href="#"
+    class= "link-none"
+    [title]="product.name +' '+ 'Details' "
+    [routerLink]="['/products', product.id]">
+        <h2> {{ product.name }} </h2> 
+    </a>
+
+    <a href="#"
+    class= "link-none add"
+    *ngIf="product.description">
+        <h3> Desctiption: {{ product.description }} </h3> 
+    </a>
+
+    <button class="btn"
+    (click)="share(product)">
+        Share
+    </button>
+
+    <app-product-alerts
+    [product]="product"
+    (notify)="onNotify()"
+    ></app-product-alerts>
+</div>

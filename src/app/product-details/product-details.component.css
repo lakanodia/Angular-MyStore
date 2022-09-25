@@ -1,0 +1,22 @@
+.btn2{
+    max-width: 70px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3c6dd5;
+    color: white;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #417af7;
+}
+.product-detail{
+    max-width: 300px;
+    width: 100%;
+    background-color: #dce7ff;
+    padding: 20px;
+    border-radius: 7px;
+
+}
