@@ -24,7 +24,6 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {}
 
-
   onSubmit(): void {
     // Process checkout data here
     this.items = this.cartService.clearCart();
